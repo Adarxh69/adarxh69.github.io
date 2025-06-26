@@ -1,2 +1,18 @@
 # adarxh69.github.io
-My Day 1 of 1-Year Web &amp; App Dev Journey
+# 👋 Hello! I'm Adarsh
+
+## 🚀 About Me
+- 🧑‍🎓 I'm a student learning web & app development
+- 🎯 Goal: Become self-dependent after class 10
+- 🌐 Passionate about coding and tech
+
+## 🛠️ Skills (learning)
+- HTML
+- CSS
+- JavaScript (soon)
+- Git & GitHub
+
+## 📚 Projects
+Coming soon... Stay tuned!
+
+
