@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adarsh | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header>
@@ -13,24 +14,36 @@
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero">
+  <section id="hero" data-aos="fade-up">
     <h1>Hi, I'm Adarsh 👋</h1>
-    <p>Aspiring Web & App Developer</p>
+    <p>Class 9 | Web & App Developer | Jack and Jill School</p>
     <a href="#projects" class="btn">See My Work</a>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <h2>About Me</h2>
-    <p>I’m learning web development to become self-dependent and build amazing projects. I love coding and creating beautiful websites. 💻🚀</p>
+    <p>I'm Adarsh, a class 9 student of <strong>Jack and Jill School</strong>. I’m passionate about coding and currently learning web and app development to become self-dependent. I'm also building a <strong>website app for my school</strong> to help students and teachers stay connected.</p>
   </section>
 
-  <section id="projects">
+  <section id="skills" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>GitHub</li>
+      <li>App UI Design (Basic)</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="fade-left">
     <h2>Projects</h2>
     <div class="project-list">
       <div class="project-card">
@@ -39,12 +52,26 @@
         <a href="https://adarxh69.github.io" target="_blank">Visit</a>
       </div>
       <div class="project-card">
-        <h3>Weather App</h3>
-        <p>A simple weather app using OpenWeather API.</p>
+        <h3>School Website App</h3>
+        <p>A custom site/app for Jack and Jill School. Designed to help students and teachers connect better.</p>
         <a href="#">Coming Soon</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:adarsh@example.com">adarsh@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/adarxh69" target="_blank">adarxh69</a></p>
+    <p>Instagram: <a href="https://instagram.com/adars_h2919" target="_blank">@adars_h2919</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adarsh | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
