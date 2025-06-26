@@ -1,9 +1,3 @@
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+// Smooth scroll already enabled via CSS
+// You can add interactive features here later
+console.log("Portfolio loaded.");
