@@ -1,29 +1,141 @@
-<!-- index.html --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jack and Jill School</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #ffca28;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    nav {
+      background: #212121;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 40px;
+      animation: slideIn 1s ease-out;
+    }
+
+    nav a {
+      color: #eeeeee;
+      text-decoration: none;
+      font-size: 1.1rem;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #ffca28;
+      left: 0;
+      bottom: -4px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    main h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #ffca28;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    main p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #cccccc;
+      animation: fadeIn 2s ease-in;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #888;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Jack and Jill School</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>  <main>
-    <section class="welcome">
-      <h2>Welcome to Jack and Jill School</h2>
-      <p>A place for excellence in education, discipline, and growth.</p>
-    </section>
-  </main>  <footer>
-    <p>&copy; 2025 Jack and Jill School. All rights reserved.</p>
+    Jack and Jill School
+  </header>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Welcome to Jack and Jill School</h2>
+    <p>
+      Where learning begins with joy. We are committed to nurturing young minds through
+      innovative education, creativity, and care.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Jack and Jill School. All rights reserved.
   </footer>
+
 </body>
-</html><!-- about.html to students.html follow the same structure, just change <h2> title and <p> content -->
+</html>
